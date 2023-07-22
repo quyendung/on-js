@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //tinh tong cac so chan tu 0 den input
+    let n = parseInt(prompt('input'))
+
+    function tinhTong(n) {
+        let sum = 0
+        let temp = 0
+        while (temp < n) {
+            if (temp % 2 == 0) {
+                sum += temp
+            }
+            temp++
+        }
+        return sum
+    }
+
+    console.log('Tong cac so chan tu 1 den ' + n + ' la ' + tinhTong(n))
+</script>
+</html>

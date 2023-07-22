@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // giai phuong trinh bac 1
+    function giaiPhuongTrinh(a, b) {
+        if (a == 0 && b != 0) {
+            return console.log('phuong trinh vo nghiem')
+        } else if (a == 0 && b == 0) {
+            return console.log('phuong trinh co vo so nghiem')
+        } else if (a != 0) {
+            return console.log('phuong trinh co 1 nghiem ' + (-b / a))
+        }
+    }
+
+    let a = parseInt(prompt('input'))
+    let b = parseInt(prompt('input'))
+
+    giaiPhuongTrinh(a, b)
+</script>
+</html>
